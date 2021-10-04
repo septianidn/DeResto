@@ -8,17 +8,16 @@
 
     <ImageView
         android:id="@+id/rectangle"
-        android:layout_width="262dp"
-        android:layout_height="400dp"
+        android:layout_width="260dp"
+        android:layout_height="467dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.575" />
 
     <TextView
         android:id="@+id/textView2"
@@ -26,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/pathway"
-        android:text="Halaman Log In"
+        android:text="Halaman Sign Up"
         android:textColor="#f2221b"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
@@ -35,18 +34,34 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/editTextPhone5"
         android:layout_width="201dp"
         android:layout_height="48dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#FBBBBB"
         android:ems="10"
         android:fontFamily="@font/montserrat"
-        android:hint="  Username atau nomor hp"
+        android:hint="  Konfirmasi Password"
         android:inputType="phone"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone4" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Email"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -54,7 +69,39 @@
         android:id="@+id/editTextPhone2"
         android:layout_width="201dp"
         android:layout_height="48dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Username"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextPhone3"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Nama Pengguna"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
+
+    <EditText
+        android:id="@+id/editTextPhone4"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#FBBBBB"
         android:ems="10"
         android:fontFamily="@font/montserrat"
@@ -62,26 +109,29 @@
         android:inputType="phone"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone3" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="328dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="106dp"
+        android:layout_height="54dp"
         android:backgroundTint="#f2221b"
-        android:text="log in"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
         app:layout_constraintTop_toTopOf="@+id/rectangle"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.955"
+        tools:ignore="MissingConstraints"
+        android:onClick="login"/>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="100dp"
-        android:layout_height="38dp"
+        android:layout_width="103dp"
+        android:layout_height="43dp"
         android:layout_margin="16dp"
         android:background="@drawable/stroke"
         android:text="Kembali"
@@ -89,11 +139,11 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
         app:layout_constraintTop_toTopOf="@+id/rectangle"
-        app:layout_constraintVertical_bias="0.961"
-        tools:ignore="MissingConstraints"
+        app:layout_constraintVertical_bias="0.98"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
         android:onClick="kembali_landing"/>
 
     <TextView
@@ -121,6 +171,19 @@
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="241dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Saya telah menyetujui syarat dan ketentuan."
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toTopOf="@+id/rectangle"
+        app:layout_constraintVertical_bias="0.838" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
