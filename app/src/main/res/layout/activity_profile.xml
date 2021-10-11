@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_gradient_background">
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="262dp"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Email"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toTopOf="@+id/rectangle" />
+
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Username"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextPhone6"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Nama Pengguna"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextPhone7"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Nomor Ponsel"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextPhone8"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Alamat"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextPhone9"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="260dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Jenis Kelamin"
+        android:inputType="phone"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#f2221b"
+        android:text="Ganti Password"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/stroke"
+        android:onClick="kembali_landing"
+        android:text="Log Out"
+        android:textSize="8dp"
+        android:textColor="#f2221b"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Profile"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

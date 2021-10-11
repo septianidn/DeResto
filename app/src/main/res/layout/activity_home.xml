@@ -87,7 +87,13 @@
         android:background="@drawable/rectangle"
         android:fontFamily="@font/montserrat"
         android:gravity=""
+<<<<<<< Updated upstream
         android:text="  Masukkan kata kunci"
+=======
+        android:paddingLeft="10dp"
+        android:text="Masukkan kata kunci"
+        android:alpha="0.7"
+>>>>>>> Stashed changes
         android:textColor="#333333"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
