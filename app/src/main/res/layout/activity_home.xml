@@ -59,10 +59,12 @@
         android:text="Favorit"
         android:textColor="#e5e5e5"
         android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView23"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.111" />
 
     <TextView
         android:id="@+id/textView7"
@@ -82,21 +84,16 @@
         android:id="@+id/textView8"
         android:layout_width="318dp"
         android:layout_height="30dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="144dp"
         android:alpha="0.7"
         android:background="@drawable/rectangle"
         android:fontFamily="@font/montserrat"
         android:gravity=""
-<<<<<<< Updated upstream
-        android:text="  Masukkan kata kunci"
-=======
         android:paddingLeft="10dp"
-        android:text="Masukkan kata kunci"
-        android:alpha="0.7"
->>>>>>> Stashed changes
+        android:text="  Masukkan kata kunci"
         android:textColor="#333333"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -131,7 +128,7 @@
         app:layout_constraintVertical_bias="0.391" />
 
     <ImageView
-        android:id="@+id/rectangle_3"
+        android:id="@+id/navbar"
         android:layout_width="412dp"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
@@ -143,7 +140,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.997" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -154,7 +151,20 @@
         app:layout_constraintEnd_toEndOf="@+id/rectangle_"
         app:layout_constraintStart_toStartOf="@+id/rectangle_"
         app:layout_constraintTop_toTopOf="@+id/rectangle_"
-        app:srcCompat="@drawable/ic_drinking" />
+        android:background="@drawable/ic_drinking" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_home"
+        android:elevation="5pt"
+        app:layout_constraintBottom_toBottomOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="@+id/navbar"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/navbar"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:layout_constraintVertical_bias="0.461" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -165,7 +175,7 @@
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
         app:layout_constraintStart_toStartOf="@+id/rectangle_1"
         app:layout_constraintTop_toTopOf="@+id/rectangle_1"
-        app:srcCompat="@drawable/ic_plate" />
+        android:background="@drawable/ic_plate"/>
 
     <ImageView
         android:id="@+id/imageView7"
@@ -176,7 +186,7 @@
         app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
         app:layout_constraintStart_toStartOf="@+id/rectangle_2"
         app:layout_constraintTop_toTopOf="@+id/rectangle_2"
-        app:srcCompat="@drawable/ic_pudding" />
+        android:background="@drawable/ic_pudding" />
 
     <ImageView
         android:id="@+id/rectangle_2"
@@ -188,117 +198,103 @@
         android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.391" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/bag"
         android:layout_width="35dp"
         android:layout_height="35dp"
+        android:background="@drawable/ic_bag"
         android:elevation="5pt"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_3"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_bag" />
+        app:layout_constraintBottom_toBottomOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="@+id/navbar"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="@+id/navbar"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:layout_constraintVertical_bias="0.461"
+        android:onClick="cart"/>
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/message"
         android:layout_width="35dp"
         android:layout_height="35dp"
+        android:background="@drawable/ic_message"
         android:elevation="5pt"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_3"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_home" />
+        android:onClick="Chat"
+        app:layout_constraintBottom_toBottomOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="@+id/navbar"
+        app:layout_constraintHorizontal_bias="0.331"
+        app:layout_constraintStart_toStartOf="@+id/navbar"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:layout_constraintVertical_bias="0.461" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/profile"
         android:layout_width="35dp"
         android:layout_height="35dp"
+        android:background="@drawable/ic_profile"
         android:elevation="5pt"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_3"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_message" />
+        android:onClick="Profile"
+        app:layout_constraintBottom_toBottomOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="@+id/navbar"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/navbar"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:layout_constraintVertical_bias="0.461" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/setting"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:elevation="5pt"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_3"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_profile" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:elevation="5pt"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
+        app:layout_constraintBottom_toBottomOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="@+id/navbar"
+        android:onClick="setting"
         app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_3"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_3"
+        app:layout_constraintStart_toStartOf="@+id/navbar"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
         app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_setting" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033"
-        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+        android:background="@drawable/ic_setting" />
 
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:elevation="5pt"
         android:backgroundTint="#e5e5e5"
+        android:elevation="5pt"
         app:layout_constraintBottom_toBottomOf="@+id/imageView23"
         app:layout_constraintEnd_toEndOf="@+id/imageView23"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView23"
         app:layout_constraintTop_toTopOf="@+id/imageView23"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+        android:background="@drawable/ic_baseline_add_circle_outline_24"/>
 
     <ImageView
         android:id="@+id/imageView23"
         android:layout_width="166dp"
         android:layout_height="205dp"
-        app:srcCompat="@drawable/rectanglered"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="422dp" />
+        android:background="@drawable/rectanglered"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView24"
         android:layout_width="166dp"
         android:layout_height="205dp"
-        app:srcCompat="@drawable/rectanglered"
-        tools:layout_editor_absoluteX="214dp"
-        tools:layout_editor_absoluteY="420dp" />
+        android:layout_marginStart="188dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView23"
+        android:background="@drawable/rectanglered"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView25"
@@ -310,7 +306,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView24"
         app:layout_constraintTop_toTopOf="@+id/imageView24"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+        android:background="@drawable/ic_baseline_add_circle_outline_24" />
 
     <TextView
         android:id="@+id/textView11"
@@ -356,12 +352,13 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        android:background="@drawable/ic_baseline_star_rate_24"
         app:layout_constraintEnd_toEndOf="@+id/imageView23"
         app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="@+id/imageView23"
         app:layout_constraintTop_toTopOf="@+id/imageView23"
         app:layout_constraintVertical_bias="0.789"
-        app:srcCompat="@drawable/ic_baseline_star_rate_24" />
+         />
 
     <ImageView
         android:id="@+id/imageView"
@@ -372,8 +369,8 @@
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="@+id/imageView23"
         app:layout_constraintTop_toTopOf="@+id/imageView23"
-        app:layout_constraintVertical_bias="0.104"
-        app:srcCompat="@drawable/nasi_goreng_homies" />
+        app:layout_constraintVertical_bias="0.121"
+        android:background="@drawable/nasi_goreng_homies"/>
 
     <TextView
         android:id="@+id/textView14"
@@ -424,7 +421,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView24"
         app:layout_constraintTop_toTopOf="@+id/imageView24"
         app:layout_constraintVertical_bias="0.81"
-        app:srcCompat="@drawable/ic_baseline_star_rate_24" />
+        android:background="@drawable/ic_baseline_star_rate_24" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -436,7 +433,17 @@
         app:layout_constraintStart_toStartOf="@+id/imageView24"
         app:layout_constraintTop_toTopOf="@+id/imageView24"
         app:layout_constraintVertical_bias="0.133"
-        app:srcCompat="@drawable/milkshake" />
+        android:background="@drawable/milkshake" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_baseline_account_circle_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

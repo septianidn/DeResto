@@ -138,14 +138,14 @@
         android:background="@drawable/stroke"
         android:onClick="kembali_landing"
         android:text="Log Out"
-        android:textSize="8dp"
         android:textColor="#f2221b"
+        android:textSize="8dp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView"

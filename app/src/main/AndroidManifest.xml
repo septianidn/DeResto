@@ -21,6 +21,10 @@
         <activity android:name=".Login" ></activity>
         <activity android:name=".SignUp" ></activity>
         <activity android:name=".Home" ></activity>
+        <activity android:name=".Chat" ></activity>
+        <activity android:name=".Cart" ></activity>
+        <activity android:name=".Profile" ></activity>
+        <activity android:name=".Setting" ></activity>
     </application>
 
 </manifest>
