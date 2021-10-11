@@ -12,6 +12,38 @@
         <entry key="..\:/PTB/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/PTB/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/PTB/app/src/main/res/layout/activity_register.xml" value="0.25" />
+<<<<<<< Updated upstream
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/circle.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/cycle.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_bag.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_drink.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_drinking.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_plate.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_setting.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/navbar.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/rectangle.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/rectanglered.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/search_bar.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/stroke.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_main.xml" value="0.2" />
+=======
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.26145833333333335" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/drawable/rectangle.xml" value="0.26145833333333335" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/drawable/rounded_rectangle.xml" value="0.26145833333333335" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/drawable/search_bar.xml" value="0.26145833333333335" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/actifity_pengaturan.xml" value="0.2918781725888325" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_chat.xml" value="0.25672645739910316" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_landing_page.xml" value="0.2453125" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_main.xml" value="0.2453125" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_register.xml" value="0.2453125" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>
