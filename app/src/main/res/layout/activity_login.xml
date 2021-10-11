@@ -34,38 +34,6 @@
         app:layout_constraintStart_toStartOf="@+id/rectangle"
         app:layout_constraintTop_toTopOf="@+id/rectangle" />
 
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="201dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="68dp"
-        android:backgroundTint="#FBBBBB"
-        android:ems="10"
-        android:fontFamily="@font/montserrat"
-        android:hint="  Username atau nomor hp"
-        android:inputType="phone"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <EditText
-        android:id="@+id/editTextPhone2"
-        android:layout_width="201dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="44dp"
-        android:backgroundTint="#FBBBBB"
-        android:ems="10"
-        android:fontFamily="@font/montserrat"
-        android:hint="  Password"
-        android:inputType="phone"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -76,7 +44,8 @@
         android:text="log in"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintTop_toTopOf="@+id/rectangle"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="login"/>
 
     <Button
         android:id="@+id/button2"
@@ -84,6 +53,7 @@
         android:layout_height="38dp"
         android:layout_margin="16dp"
         android:background="@drawable/stroke"
+        android:onClick="kembali_landing"
         android:text="Kembali"
         android:textColor="#f2221b"
         app:backgroundTint="@null"
@@ -93,8 +63,7 @@
         app:layout_constraintStart_toStartOf="@+id/rectangle"
         app:layout_constraintTop_toTopOf="@+id/rectangle"
         app:layout_constraintVertical_bias="0.961"
-        tools:ignore="MissingConstraints"
-        android:onClick="kembali_landing"/>
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView"
@@ -121,6 +90,39 @@
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="202dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Username atau nomor hp"
+        android:inputType="textAutoComplete"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="202dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FBBBBB"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
