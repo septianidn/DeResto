@@ -23,14 +23,14 @@
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="201dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#FBBBBB"
+        android:layout_height="31dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FBBBBb"
         android:ems="10"
         android:fontFamily="@font/montserrat"
-        android:hint="  Email"
-        android:inputType="phone"
-        android:textSize="12dp"
+        android:hint="septianganteng@gmail.com"
+        android:textAlignment="textEnd"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
@@ -39,14 +39,14 @@
     <EditText
         android:id="@+id/editTextPhone2"
         android:layout_width="201dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#FBBBBB"
         android:ems="10"
         android:fontFamily="@font/montserrat"
-        android:hint="  Username"
-        android:inputType="phone"
-        android:textSize="12dp"
+        android:hint="septianganteng"
+        android:textAlignment="textEnd"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
@@ -55,66 +55,66 @@
     <EditText
         android:id="@+id/editTextPhone6"
         android:layout_width="201dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="80dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#FBBBBB"
         android:ems="10"
         android:fontFamily="@font/montserrat"
-        android:hint="  Nama Pengguna"
-        android:inputType="phone"
-        android:textSize="12dp"
+        android:hint="Septian Ganteng"
+        android:textAlignment="textEnd"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
 
     <EditText
         android:id="@+id/editTextPhone7"
         android:layout_width="201dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="144dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#FBBBBB"
         android:ems="10"
         android:fontFamily="@font/montserrat"
-        android:hint="  Nomor Ponsel"
-        android:inputType="phone"
-        android:textSize="12dp"
+        android:hint="0831-6969-6969"
+        android:textAlignment="textEnd"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone6" />
 
     <EditText
         android:id="@+id/editTextPhone8"
         android:layout_width="201dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="200dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#FBBBBB"
         android:ems="10"
         android:fontFamily="@font/montserrat"
-        android:hint="  Alamat"
-        android:inputType="phone"
-        android:textSize="12dp"
+        android:hint="Gang Doli No.69"
+        android:textAlignment="textEnd"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone7" />
 
     <EditText
         android:id="@+id/editTextPhone9"
         android:layout_width="201dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="260dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#FBBBBB"
         android:ems="10"
         android:fontFamily="@font/montserrat"
-        android:hint="  Jenis Kelamin"
-        android:inputType="phone"
-        android:textSize="12dp"
+        android:hint="Laki-laki"
+        android:textAlignment="textEnd"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone8" />
 
     <Button
         android:id="@+id/button"
@@ -162,11 +162,12 @@
         android:id="@+id/imageView2"
         android:layout_width="83dp"
         android:layout_height="76dp"
-        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
         app:srcCompat="@drawable/ic_baseline_account_circle_24" />
 
     <ImageView
@@ -260,6 +261,110 @@
         app:layout_constraintHorizontal_bias="0.797"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toTopOf="@+id/rectangle"
+        app:layout_constraintVertical_bias="0.014"
+        android:background="@drawable/ic_baseline_edit_24" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toTopOf="@+id/rectangle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Nama Pengguna"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone6"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Nomor Ponsel"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone7"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Alamat"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone8"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Jenis Kelamin"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone9"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone8"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Septian Ganteng"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
