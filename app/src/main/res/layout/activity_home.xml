@@ -84,23 +84,18 @@
         android:id="@+id/textView8"
         android:layout_width="318dp"
         android:layout_height="30dp"
-<<<<<<< HEAD
+
         android:layout_marginTop="144dp"
-=======
->>>>>>> 21c6b597e4a1def9d68a358aab6472279acd26ab
+
         android:alpha="0.7"
         android:background="@drawable/rectangle"
         android:fontFamily="@font/montserrat"
         android:gravity=""
-<<<<<<< HEAD
-=======
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="109dp" />
 
-    <<<<<<< Updated upstream
-        android:text="  Masukkan kata kunci"
-=======
->>>>>>> 21c6b597e4a1def9d68a358aab6472279acd26ab
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="109dp"
+
+
         android:paddingLeft="10dp"
         android:text="  Masukkan kata kunci"
         android:textColor="#333333"
@@ -116,6 +111,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/rectangle"
+        android:onClick="Menu"
         android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

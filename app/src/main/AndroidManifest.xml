@@ -25,6 +25,7 @@
         <activity android:name=".Cart" ></activity>
         <activity android:name=".Profile" ></activity>
         <activity android:name=".Setting" ></activity>
+        <activity android:name=".Menu" ></activity>
     </application>
 
 </manifest>
