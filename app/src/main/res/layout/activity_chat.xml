@@ -7,20 +7,6 @@
     android:background="@drawable/ic_gradient_background">
 
     <ImageView
-        android:id="@+id/chat"
-        android:layout_width="331dp"
-        android:layout_height="566dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/search_bar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
-
-    <ImageView
         android:id="@+id/rectangle_3"
         android:layout_width="412dp"
         android:layout_height="48dp"
@@ -36,17 +22,27 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="324dp"
+        android:layout_height="534dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rectangle" />
+
+    <ImageView
         android:id="@+id/imageView8"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:elevation="5pt"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@+id/rectangle_3"
         app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_bag" />
+        app:layout_constraintVertical_bias="0.5"
+        android:background="@drawable/ic_bag" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -55,11 +51,11 @@
         android:elevation="5pt"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="@+id/rectangle_3"
         app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_message" />
+        app:layout_constraintVertical_bias="0.5"
+        android:background="@drawable/ic_message" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -68,11 +64,11 @@
         android:elevation="5pt"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="@+id/rectangle_3"
         app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_profile" />
+        app:layout_constraintVertical_bias="0.5"
+        android:background="@drawable/ic_profile" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -81,11 +77,11 @@
         android:elevation="5pt"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/rectangle_3"
         app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_home" />
+        app:layout_constraintVertical_bias="0.5"
+        android:background="@drawable/ic_home" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -94,11 +90,11 @@
         android:elevation="5pt"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="@+id/rectangle_3"
         app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.500"
-        app:srcCompat="@drawable/ic_setting" />
+        app:layout_constraintVertical_bias="0.5"
+        android:background="@drawable/ic_setting" />
 
     <TextView
         android:id="@+id/textView"
@@ -116,24 +112,27 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="14dp"
-        android:layout_height="14dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+        app:layout_constraintVertical_bias="0.039"
+        android:background="@drawable/ic_baseline_keyboard_backspace_24" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/monstserratb"
         android:text="Chat"
         android:textColor="#ffffff"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -141,38 +140,42 @@
         android:id="@+id/userChat1"
         android:layout_width="94dp"
         android:layout_height="35dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rectangle"
         android:backgroundTint="#bebebe"
+        android:elevation="5pt"
+        android:fontFamily="@font/montserrat"
         android:gravity=""
         android:paddingLeft="5dp"
-        android:text="Mabar"
+        android:text="Mabar ?"
         android:textColor="#e5e5e5"
-        app:layout_constraintEnd_toEndOf="@+id/chat"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="@+id/chat"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/imageView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/userChat2"
         android:layout_width="94dp"
         android:layout_height="35dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/rounded_rectangle"
+        android:elevation="5pt"
+        android:fontFamily="@font/montserrat"
         android:gravity=""
         android:paddingLeft="5dp"
-        android:text="Mabar?"
+        android:text="Gas"
         android:textColor="#e5e5e5"
-        app:layout_constraintEnd_toEndOf="@+id/chat"
-        app:layout_constraintHorizontal_bias="0.881"
-        app:layout_constraintStart_toStartOf="@+id/chat"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:elevation="5pt"
+        android:fontFamily="@font/montserrat"
         android:text="14-09-2021-14:41"
         android:textSize="8dp"
         app:layout_constraintStart_toStartOf="@+id/userChat1"
@@ -182,46 +185,70 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:elevation="5pt"
+        android:fontFamily="@font/montserrat"
         android:text="14-09-2021-14:43"
         android:textSize="8dp"
         app:layout_constraintStart_toStartOf="@+id/userChat2"
         app:layout_constraintTop_toBottomOf="@+id/userChat2" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="260dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="16dp"
-        android:alpha="0.7"
-        android:background="#1A000000"
-        android:fontFamily="@font/montserrat"
-        android:gravity=""
-        android:text="Kirim pesan..."
-        app:layout_constraintBottom_toBottomOf="@+id/chat"
-        app:layout_constraintEnd_toEndOf="@+id/chat"
-        app:layout_constraintHorizontal_bias="0.549"
-        app:layout_constraintStart_toStartOf="@+id/chat" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/chat"
-        app:layout_constraintEnd_toEndOf="@+id/chat"
-        app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="@+id/chat"
-        app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
-
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/chat"
-        app:layout_constraintEnd_toEndOf="@+id/chat"
-        app:layout_constraintHorizontal_bias="0.986"
-        app:layout_constraintStart_toStartOf="@+id/chat"
-        app:srcCompat="@drawable/ic_baseline_send_24" />
+        android:background="@drawable/ic_baseline_send_24"
+        android:elevation="5pt"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Today"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView30"
+        app:layout_constraintEnd_toEndOf="@+id/imageView30"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/imageView30"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:inputType="textPersonName"
+        android:text="  Pesan"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView30"
+        app:layout_constraintEnd_toEndOf="@+id/imageView30"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/imageView30"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_camera_24"
+        android:backgroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

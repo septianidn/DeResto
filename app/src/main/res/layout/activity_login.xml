@@ -124,5 +124,17 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.5"
+        android:background="@drawable/ic_baseline_remove_red_eye_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

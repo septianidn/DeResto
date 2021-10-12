@@ -17,6 +17,7 @@
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_bag.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_camera_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.22552083333333334" />
@@ -31,14 +32,15 @@
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/rectanglered.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/search_bar.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/stroke.xml" value="0.22552083333333334" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/actifity_pengaturan.xml" value="0.209375" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_chat.xml" value="0.209375" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/actifity_pengaturan.xml" value="0.33" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_chat.xml" value="0.22" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_landing_page.xml" value="0.209375" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_menu.xml" value="0.25" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_profile.xml" value="0.5" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_menu.xml" value="0.5" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_register.xml" value="0.25" />
       </map>
     </option>
   </component>
