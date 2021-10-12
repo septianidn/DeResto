@@ -189,8 +189,8 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="249dp"
-        android:layout_height="26dp"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="16dp"
         android:alpha="0.7"
         android:background="#1A000000"
@@ -199,16 +199,17 @@
         android:text="Kirim pesan..."
         app:layout_constraintBottom_toBottomOf="@+id/chat"
         app:layout_constraintEnd_toEndOf="@+id/chat"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="@+id/chat" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/chat"
         app:layout_constraintEnd_toEndOf="@+id/chat"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="@+id/chat"
         app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
 
@@ -216,7 +217,7 @@
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/chat"
         app:layout_constraintEnd_toEndOf="@+id/chat"
         app:layout_constraintHorizontal_bias="0.986"
