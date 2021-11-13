@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class KeranjangAdapter extends RecyclerView.Adapter<KeranjangAdapter.KeranjangViewHolder>{
 
-    public class KeranjangViewHolder extends RecyclerView.ViewHolder{
+    public class KeranjangViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView textQuantity, textNama, textPrice;
         ImageView  imageMenu;
@@ -27,8 +27,27 @@ public class KeranjangAdapter extends RecyclerView.Adapter<KeranjangAdapter.Kera
             textNama = itemView.findViewById(R.id.textName);
             textPrice = itemView.findViewById(R.id.textHarga);
             imageMenu = itemView.findViewById(R.id.imageMenu);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            if (listener != null)
+            {
+                listener.onClick(view, listKeranjang.get(getAdapterPosition()));
+            }
         }
     }
+
+    public interface onKeranjangViewHolderClick{
+        void onClick(View view, Keranjang keranjang);
+    }
+
+    public void setListener(onKeranjangViewHolderClick listener) {
+        this.listener = listener;
+    }
+
+    onKeranjangViewHolderClick listener = null;
 
     ArrayList<Keranjang> listKeranjang = new ArrayList<>();
     public void setListKeranjang(ArrayList<Keranjang> listKeranjang) {

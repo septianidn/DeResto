@@ -219,7 +219,7 @@
         app:layout_constraintStart_toStartOf="@+id/navbar"
         app:layout_constraintTop_toTopOf="@+id/navbar"
         app:layout_constraintVertical_bias="0.5"
-        android:onClick="cart"/>
+        android:onClick="Cart"/>
 
     <ImageView
         android:id="@+id/message"

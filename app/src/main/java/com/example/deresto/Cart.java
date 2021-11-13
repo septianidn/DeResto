@@ -5,13 +5,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.example.deresto.adapter.KeranjangAdapter;
 import com.example.deresto.model.Keranjang;
 
 import java.util.ArrayList;
 
-public class Cart extends AppCompatActivity {
+public class Cart extends AppCompatActivity implements KeranjangAdapter.onKeranjangViewHolderClick{
 
     RecyclerView rvListKeranjang;
     KeranjangAdapter keranjangAdapter;
@@ -23,6 +25,7 @@ public class Cart extends AppCompatActivity {
 
         keranjangAdapter =  new KeranjangAdapter();
         keranjangAdapter.setListKeranjang(getDataKeranjang());
+        keranjangAdapter.setListener(this);
 
         rvListKeranjang = findViewById(R.id.rvlistkeranjang);
         rvListKeranjang.setAdapter(keranjangAdapter);
@@ -37,5 +40,11 @@ public class Cart extends AppCompatActivity {
         list.add(new Keranjang(1,"nasi_goreng_homies","Nasi Goreng Homies", 6900));
 
         return list;
+    }
+
+    @Override
+    public void onClick(View view, Keranjang keranjang) {
+        String message = "Menu anda adalah "+keranjang.nama;
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

@@ -11,8 +11,9 @@ public class Home extends Activity {
         setContentView(R.layout.activity_home);
     }
 
-    public void cart(View view) {
-
+    public void Cart(View view) {
+        Intent intent = new Intent(this, Cart.class);
+        startActivity(intent);
     }
 
     public void Chat(View view) {

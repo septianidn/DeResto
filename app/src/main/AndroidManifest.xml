@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DeResto" >
-        <activity
-            android:name=".Cart"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true" >
@@ -27,6 +25,7 @@
         <activity android:name=".Chat" />
         <activity android:name=".Profile" />
         <activity android:name=".Setting" />
+        <activity android:name=".Cart" />
         <activity android:name=".Menu" />
     </application>
 
