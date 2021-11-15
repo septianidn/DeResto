@@ -35,4 +35,9 @@ public class Home extends Activity {
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
+
+    public void Home(View view) {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
 }
