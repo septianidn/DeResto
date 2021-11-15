@@ -3,44 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/drawable/ic_pinkrectangle.xml" value="0.38697916666666665" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/drawable/rectangle.xml" value="0.38697916666666665" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/drawable/rectangleabuabu.xml" value="0.38697916666666665" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/drawable/rectanglered.xml" value="0.38697916666666665" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/drawable/rounded_rectangle.xml" value="0.38697916666666665" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/actifity_pengaturan.xml" value="0.37083333333333335" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_cart.xml" value="0.37083333333333335" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_chat.xml" value="0.33" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_home.xml" value="0.37083333333333335" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_keranjang.xml" value="0.37083333333333335" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_landing_page.xml" value="0.35507246376811596" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_login.xml" value="0.35507246376811596" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_main.xml" value="0.35507246376811596" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_menu.xml" value="0.37083333333333335" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_profile.xml" value="0.33" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_register.xml" value="0.35507246376811596" />
-        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/item_keranjang.xml" value="0.31974921630094044" />
         <entry key="..\:/PTB/app/src/main/res/drawable/ic_gradient_background.xml" value="0.382051282051282" />
         <entry key="..\:/PTB/app/src/main/res/drawable/rectangle.xml" value="0.382051282051282" />
         <entry key="..\:/PTB/app/src/main/res/drawable/search_bar.xml" value="0.3880208333333333" />
         <entry key="..\:/PTB/app/src/main/res/drawable/stroke.xml" value="0.3880208333333333" />
-        <entry key="..\:/PTB/app/src/main/res/layout/actifity_pengaturan.xml" value="0.371875" />
-        <entry key="..\:/PTB/app/src/main/res/layout/activity_cart.xml" value="0.371875" />
-        <entry key="..\:/PTB/app/src/main/res/layout/activity_chat.xml" value="0.371875" />
         <entry key="..\:/PTB/app/src/main/res/layout/activity_home.xml" value="0.5" />
         <entry key="..\:/PTB/app/src/main/res/layout/activity_landing_page.xml" value="0.371875" />
         <entry key="..\:/PTB/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/PTB/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
-        <entry key="..\:/PTB/app/src/main/res/layout/activity_menu.xml" value="0.371875" />
-        <entry key="..\:/PTB/app/src/main/res/layout/activity_profile.xml" value="0.371875" />
         <entry key="..\:/PTB/app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="..\:/PTB/app/src/main/res/layout/item_keranjang.xml" value="0.371875" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/circle.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/cycle.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_bag.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.22552083333333334" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_camera_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.22552083333333334" />
@@ -56,16 +32,24 @@
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/search_bar.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/drawable/stroke.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/actifity_pengaturan.xml" value="0.209375" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_cart.xml" value="0.209375" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_chat.xml" value="0.209375" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_home.xml" value="0.209375" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_landing_page.xml" value="0.209375" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_menu.xml" value="0.209375" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_profile.xml" value="0.209375" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/item_keranjang.xml" value="0.209375" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_profile.xml" value="0.5" />
+        <entry key="..\:/Users/Shandyka/Documents/GitHub/DeResto/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/actifity_pengaturan.xml" value="0.4" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_cart.xml" value="0.6" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_chat.xml" value="0.72" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_home.xml" value="0.6" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_landing_page.xml" value="0.264" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_login.xml" value="0.2453125" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_main.xml" value="0.2453125" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_menu.xml" value="0.2453125" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_profile.xml" value="0.2453125" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/activity_register.xml" value="0.2453125" />
+        <entry key="..\:/xampp/htdocs/DeResto/app/src/main/res/layout/item_keranjang.xml" value="0.4" />
       </map>
     </option>
   </component>
