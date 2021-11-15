@@ -161,7 +161,6 @@
         android:layout_height="35dp"
         android:background="@drawable/ic_home"
         android:elevation="5pt"
-        android:onClick="Home"
         app:layout_constraintBottom_toBottomOf="@+id/navbar"
         app:layout_constraintEnd_toEndOf="@+id/navbar"
         app:layout_constraintHorizontal_bias="0.5"

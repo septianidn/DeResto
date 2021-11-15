@@ -52,7 +52,6 @@
         android:layout_height="35dp"
         android:background="@drawable/ic_bag"
         android:elevation="5pt"
-        android:onClick="Cart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"

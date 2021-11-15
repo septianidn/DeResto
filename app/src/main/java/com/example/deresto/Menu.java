@@ -15,8 +15,9 @@ public class Menu extends Activity {
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
-    public void cart(View view) {
-
+    public void Cart(View view) {
+        Intent intent = new Intent(this, Cart.class);
+        startActivity(intent);
     }
 
     public void Chat(View view) {
@@ -34,8 +35,5 @@ public class Menu extends Activity {
         startActivity(intent);
     }
 
-    public void Menu(View view) {
-        Intent intent = new Intent(this, Menu.class);
-        startActivity(intent);
-    }
+
 }

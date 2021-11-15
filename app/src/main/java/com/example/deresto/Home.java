@@ -36,8 +36,4 @@ public class Home extends Activity {
         startActivity(intent);
     }
 
-    public void Home(View view) {
-        Intent intent = new Intent(this, Home.class);
-        startActivity(intent);
-    }
 }

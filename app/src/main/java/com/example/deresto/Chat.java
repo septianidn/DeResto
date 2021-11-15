@@ -17,10 +17,6 @@ public class Chat extends Activity {
         startActivity(intent);
     }
 
-    public void Chat(View view) {
-        Intent intent = new Intent(this, Chat.class);
-        startActivity(intent);
-    }
 
     public void Profile(View view) {
         Intent intent = new Intent(this, Profile.class);

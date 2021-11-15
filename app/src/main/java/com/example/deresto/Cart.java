@@ -49,11 +49,6 @@ public class Cart extends AppCompatActivity implements KeranjangAdapter.onKeranj
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
-    public void Cart(View view) {
-        Intent intent = new Intent(this, Cart.class);
-        startActivity(intent);
-    }
-
     public void Chat(View view) {
         Intent intent = new Intent(this, Chat.class);
         startActivity(intent);

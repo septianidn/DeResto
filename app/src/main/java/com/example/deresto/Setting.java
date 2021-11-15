@@ -26,11 +26,6 @@ public class Setting extends Activity {
         startActivity(intent);
     }
 
-    public void setting(View view) {
-        Intent intent = new Intent(this, Setting.class);
-        startActivity(intent);
-    }
-
     public void Home(View view) {
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);

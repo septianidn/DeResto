@@ -21,11 +21,6 @@ public class Profile extends Activity {
         startActivity(intent);
     }
 
-    public void Profile(View view) {
-        Intent intent = new Intent(this, Profile.class);
-        startActivity(intent);
-    }
-
     public void setting(View view) {
         Intent intent = new Intent(this, Setting.class);
         startActivity(intent);
