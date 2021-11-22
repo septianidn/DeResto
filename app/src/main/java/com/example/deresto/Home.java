@@ -5,10 +5,40 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Home extends Activity {
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.deresto.adapter.FavoritAdapter;
+import com.example.deresto.model.Favorit;
+
+import java.util.ArrayList;
+
+public class Home extends Activity implements FavoritAdapter.onFavoritViewholderClick {
+
+    RecyclerView rvlistFavorit;
+    FavoritAdapter favoritAdapter;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        favoritAdapter = new FavoritAdapter();
+        favoritAdapter.setListFavorit(getDataFavorit());
+
+        rvlistFavorit = findViewById(R.id.rvfavorit);
+        rvlistFavorit.setAdapter(favoritAdapter);
+        LinearLayoutManager linearManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        rvlistFavorit.setLayoutManager(linearManager);
+
+    }
+
+    public ArrayList<Favorit> getDataFavorit(){
+        ArrayList<Favorit> list = new ArrayList<>();
+        list.add(new Favorit("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)", 6900));
+        list.add(new Favorit("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)", 6900));
+        list.add(new Favorit("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)", 6900));
+
+        return list;
     }
 
     public void Cart(View view) {

@@ -5,10 +5,44 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Menu extends Activity {
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.deresto.adapter.MakananAdapter;
+import com.example.deresto.model.Makanan;
+
+import java.util.ArrayList;
+
+public class Menu extends Activity implements MakananAdapter.onMakananViewholderClick{
+
+    RecyclerView rvlistmakanan;
+    MakananAdapter makananAdapter;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        makananAdapter = new MakananAdapter();
+        makananAdapter.setListMakanan(getDataMakanan());
+
+        rvlistmakanan = findViewById(R.id.rvlmenumakanan);
+        rvlistmakanan.setAdapter(makananAdapter);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
+        rvlistmakanan.setLayoutManager(gridLayoutManager);
+    }
+
+    public ArrayList<Makanan> getDataMakanan(){
+        ArrayList<Makanan> list = new ArrayList<>();
+        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+
+        return list;
     }
 
     public void Home(View view) {
