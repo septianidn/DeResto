@@ -43,11 +43,11 @@ public class Login extends AppCompatActivity {
         String username = editUsername.getText().toString();
         String password = editPassword.getText().toString();
 
-        String API_BASE_URL = "https://bf96-36-69-15-132.ngrok.io";
+
 
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
         Retrofit.Builder retrofitBuilder = new Retrofit.Builder()
-                .baseUrl(API_BASE_URL)
+                .baseUrl(Config.API_BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = retrofitBuilder
@@ -61,6 +61,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onResponse(Call<AuthObject> call, Response<AuthObject> response) {
                  AuthObject authObject = response.body();
+
                  if (authObject != null){
                      DataLogin dataLogin = authObject.getData();
                      String username = dataLogin.getUsername();
