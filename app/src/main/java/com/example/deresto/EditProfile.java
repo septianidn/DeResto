@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Profile extends Activity {
+public class EditProfile extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_edit_profile);
     }
 
     public void Cart(View view) {
@@ -31,8 +31,8 @@ public class Profile extends Activity {
         startActivity(intent);
     }
 
-    public void EditProfile(View view) {
-        Intent intent = new Intent(this, EditProfile.class);
+    public void Profile(View view) {
+        Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
 }
