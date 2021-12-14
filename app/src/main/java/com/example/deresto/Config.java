@@ -1,5 +1,5 @@
 package com.example.deresto;
 
 public class Config {
-    public static final String API_BASE_URL = "https://fe8c-114-125-62-92.ngrok.io";
+    public static final String API_BASE_URL = "https://18a7-36-69-15-215.ngrok.io";
 }
