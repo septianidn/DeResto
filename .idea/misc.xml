@@ -4,11 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/actifity_pengaturan.xml" value="0.37083333333333335" />
+        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_address.xml" value="0.33" />
+        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_alamat.xml" value="0.37083333333333335" />
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_cart.xml" value="0.37083333333333335" />
+        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_chat.xml" value="0.37083333333333335" />
+        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_edit_profile.xml" value="0.37083333333333335" />
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_home.xml" value="0.37083333333333335" />
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_landing_page.xml" value="0.37083333333333335" />
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_main.xml" value="0.37083333333333335" />
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_menu.xml" value="0.5" />
+        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/activity_profile.xml" value="0.37083333333333335" />
+        <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/custom_confirm_address.xml" value="0.1" />
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/item_favorit.xml" value="0.37083333333333335" />
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/item_keranjang.xml" value="0.37083333333333335" />
         <entry key="..\:/Kuliah/Koding/GitHub Desktop/DeResto/app/src/main/res/layout/item_makanan.xml" value="0.33" />
