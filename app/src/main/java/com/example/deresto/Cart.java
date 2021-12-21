@@ -68,4 +68,9 @@ public class Cart extends AppCompatActivity implements KeranjangAdapter.onKeranj
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
+
+    public void Address(View view) {
+        Intent intent = new Intent(this, Address.class);
+        startActivity(intent);
+    }
 }
