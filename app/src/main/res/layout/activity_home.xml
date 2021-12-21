@@ -104,8 +104,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/rectangle"
-        android:onClick="Menu"
         android:elevation="6dp"
+        android:onClick="Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
@@ -213,13 +213,13 @@
         android:layout_height="35dp"
         android:background="@drawable/ic_bag"
         android:elevation="5pt"
+        android:onClick="Cart"
         app:layout_constraintBottom_toBottomOf="@+id/navbar"
         app:layout_constraintEnd_toEndOf="@+id/navbar"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@+id/navbar"
         app:layout_constraintTop_toTopOf="@+id/navbar"
-        app:layout_constraintVertical_bias="0.5"
-        android:onClick="Cart"/>
+        app:layout_constraintVertical_bias="0.5" />
 
     <ImageView
         android:id="@+id/message"
@@ -253,25 +253,15 @@
         android:id="@+id/setting"
         android:layout_width="35dp"
         android:layout_height="35dp"
+        android:background="@drawable/ic_setting"
         android:elevation="5pt"
+        android:onClick="setting"
         app:layout_constraintBottom_toBottomOf="@+id/navbar"
         app:layout_constraintEnd_toEndOf="@+id/navbar"
-        android:onClick="setting"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="@+id/navbar"
         app:layout_constraintTop_toTopOf="@+id/navbar"
-        app:layout_constraintVertical_bias="0.5"
-        android:background="@drawable/ic_setting" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="44dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/ic_baseline_account_circle_24" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/textView19"
@@ -313,13 +303,13 @@
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_search_24"
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.5"
-        android:background="@drawable/ic_baseline_search_24" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvfavorit"
@@ -334,6 +324,19 @@
         app:layout_constraintVertical_bias="0.807"
         tools:itemCount="4"
         tools:listitem="@layout/item_favorit" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:onClick="SendNotif"
+        android:background="@drawable/ic_baseline_notifications_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,6 +30,8 @@
         <activity android:name=".Setting" />
         <activity android:name=".Cart" />
         <activity android:name=".Menu" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".UbahPassword" />
     </application>
 
 </manifest>

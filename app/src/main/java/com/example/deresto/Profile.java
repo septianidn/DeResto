@@ -35,4 +35,14 @@ public class Profile extends Activity {
         Intent intent = new Intent(this, EditProfile.class);
         startActivity(intent);
     }
+
+    public void UbahPassword(View view) {
+        Intent intent = new Intent(this, UbahPassword.class);
+        startActivity(intent);
+    }
+
+    public void kembali_landing(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }
