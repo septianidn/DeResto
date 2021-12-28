@@ -3,6 +3,7 @@ package com.example.deresto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -65,11 +66,25 @@ public class Login extends AppCompatActivity {
                  if (authObject != null){
                      DataLogin dataLogin = authObject.getData();
                      String username = dataLogin.getUsername();
+
+                     SharedPreferences sharedPreferences = getSharedPreferences("com.example.deresto.PREFS",MODE_PRIVATE);
+                     SharedPreferences.Editor editor = sharedPreferences.edit();
+                     String token = dataLogin.getToken();
+                     String nama = dataLogin.getNama();
+                     String email = dataLogin.getEmail();
+                     String no_hp = dataLogin.getNoHp();
+
+                     editor.putString("Token", token);
+                     editor.putString("Nama", nama);
+                     editor.putString("Email", email);
+                     editor.putString("NoHp", no_hp);
+                     editor.apply();
+
                      Toast.makeText(getApplicationContext(), "Selamat Datang "+username, Toast.LENGTH_SHORT).show();
 
-                     Intent intent = new Intent(getApplicationContext(), Home.class);
-                     startActivity(intent);
-                     finish();
+//                     Intent intent = new Intent(getApplicationContext(), Home.class);
+//                     startActivity(intent);
+//                     finish();
                  }
                  else {
                      Toast.makeText(getApplicationContext(), "Gagal Login", Toast.LENGTH_SHORT).show();

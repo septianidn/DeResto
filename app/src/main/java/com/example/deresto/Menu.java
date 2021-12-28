@@ -9,9 +9,16 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.deresto.adapter.MakananAdapter;
+import com.example.deresto.model.AuthObject;
 import com.example.deresto.model.Makanan;
+import com.example.deresto.retrofit.LoginEndPoint;
 
 import java.util.ArrayList;
+
+import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Menu extends Activity implements MakananAdapter.onMakananViewholderClick{
 
@@ -33,14 +40,27 @@ public class Menu extends Activity implements MakananAdapter.onMakananViewholder
 
     public ArrayList<Makanan> getDataMakanan(){
         ArrayList<Makanan> list = new ArrayList<>();
-        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
-        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
-        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
-        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
-        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
-        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
-        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
-        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+
+        OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
+        Retrofit.Builder retrofitBuilder = new Retrofit.Builder()
+                .baseUrl(Config.API_BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create());
+
+        Retrofit retrofit = retrofitBuilder
+                .client(httpClient.build())
+                .build();
+        LoginEndPoint loginClient = retrofit.create(LoginEndPoint.class);
+
+
+
+//        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+//        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+//        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+//        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+//        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+//        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+//        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
+//        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
 
         return list;
     }

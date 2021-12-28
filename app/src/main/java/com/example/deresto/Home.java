@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -62,6 +63,8 @@ public class Home extends Activity implements FavoritAdapter.onFavoritViewholder
     }
 
     public void Menu(View view) {
+//        ImageView iv;
+//        iv = findViewById(R.)
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }

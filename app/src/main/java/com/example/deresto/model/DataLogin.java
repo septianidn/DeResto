@@ -25,9 +25,9 @@ public class DataLogin {
     @SerializedName("email_verified_at")
     @Expose
     private String emailVerifiedAt;
-    @SerializedName("remember_token")
+    @SerializedName("token")
     @Expose
-    private Object rememberToken;
+    private String token;
     @SerializedName("created_at")
     @Expose
     private String createdAt;
@@ -83,12 +83,12 @@ public class DataLogin {
         this.emailVerifiedAt = emailVerifiedAt;
     }
 
-    public Object getRememberToken() {
-        return rememberToken;
+    public String getToken() {
+        return token;
     }
 
-    public void setRememberToken(Object rememberToken) {
-        this.rememberToken = rememberToken;
+    public void setRememberToken(String token) {
+        this.token = token;
     }
 
     public String getCreatedAt() {
