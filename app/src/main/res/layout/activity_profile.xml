@@ -124,6 +124,7 @@
         android:backgroundTint="#f2221b"
         android:text="Ganti Password"
         android:textSize="8dp"
+        android:onClick="UbahPassword"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.111"

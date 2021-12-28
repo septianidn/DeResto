@@ -101,4 +101,11 @@ public class Profile extends Activity {
 //        startActivity(intent);
     }
 
+
+    public void UbahPassword(View view) {
+        Intent intent = new Intent(this, UbahPassword.class);
+        startActivity(intent);
+    }
+
+
 }
