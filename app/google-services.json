@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "139105295798",
+    "project_id": "deresto-9d547",
+    "storage_bucket": "deresto-9d547.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139105295798:android:3f8d6aaa4bc19154dcf517",
+        "android_client_info": {
+          "package_name": "com.example.deresto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139105295798-mni7uhhsfvkk3krprru04qfcn8tsmksn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXx-KZyOoSt_YwpIEtg8_WoQEact4s2z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139105295798-mni7uhhsfvkk3krprru04qfcn8tsmksn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -82,9 +82,9 @@ public class Login extends AppCompatActivity {
 
                      Toast.makeText(getApplicationContext(), "Selamat Datang "+username, Toast.LENGTH_SHORT).show();
 
-//                     Intent intent = new Intent(getApplicationContext(), Home.class);
-//                     startActivity(intent);
-//                     finish();
+                     Intent intent = new Intent(getApplicationContext(), Home.class);
+                     startActivity(intent);
+                     finish();
                  }
                  else {
                      Toast.makeText(getApplicationContext(), "Gagal Login", Toast.LENGTH_SHORT).show();

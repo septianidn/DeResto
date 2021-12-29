@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.deresto.adapter.FavoritAdapter;
 import com.example.deresto.model.Favorit;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.ArrayList;
 
@@ -37,6 +38,7 @@ public class Home extends Activity implements FavoritAdapter.onFavoritViewholder
         LinearLayoutManager linearManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         rvlistFavorit.setLayoutManager(linearManager);
 
+//        FirebaseMessaging.getInstance().subscribeToTopic("Promo_Notification");
     }
 
     public ArrayList<Favorit> getDataFavorit(){
@@ -75,40 +77,40 @@ public class Home extends Activity implements FavoritAdapter.onFavoritViewholder
         startActivity(intent);
     }
 
-    public void SendNotif(View view){
-        //Toast.makeText(this, "Ini Notifikasi", Toast.LENGTH_SHORT).show();
-
-        Intent mainIntent = new Intent(this, Cart.class);
-
-        PendingIntent mainPendingIntent = PendingIntent.getActivity(
-                this,
-                12345,
-                mainIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
-
-        NotificationManager notificationManager = (NotificationManager)
-                getSystemService(NOTIFICATION_SERVICE);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            NotificationChannel notificationChannel =
-                    new NotificationChannel(
-                            "X123",
-                            "Portal Channel",
-                            NotificationManager.IMPORTANCE_DEFAULT);
-
-            notificationManager.createNotificationChannel(notificationChannel);
-        }
-
-        Notification mynotification =
-                new NotificationCompat.Builder(this, "X123")
-                    .setSmallIcon(R.drawable.ic_baseline_notifications_24)
-                    .setContentTitle("Pesananmu Sedang di Proses")
-                    .setContentText("Pesananmu sedang dibuat dengan bumbu penuh cinta")
-                    .setContentIntent(mainPendingIntent)
-                    .addAction(R.drawable.ic_baseline_arrow_forward_ios_24, "Buka", mainPendingIntent)
-                    .build();
-
-        notificationManager.notify(123, mynotification);
-    }
+//    public void SendNotif(View view){
+//        //Toast.makeText(this, "Ini Notifikasi", Toast.LENGTH_SHORT).show();
+//
+//        Intent mainIntent = new Intent(this, Cart.class);
+//
+//        PendingIntent mainPendingIntent = PendingIntent.getActivity(
+//                this,
+//                12345,
+//                mainIntent,
+//                PendingIntent.FLAG_UPDATE_CURRENT);
+//
+//        NotificationManager notificationManager = (NotificationManager)
+//                getSystemService(NOTIFICATION_SERVICE);
+//
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+//            NotificationChannel notificationChannel =
+//                    new NotificationChannel(
+//                            "X123",
+//                            "Portal Channel",
+//                            NotificationManager.IMPORTANCE_DEFAULT);
+//
+//            notificationManager.createNotificationChannel(notificationChannel);
+//        }
+//
+//        Notification mynotification =
+//                new NotificationCompat.Builder(this, "X123")
+//                    .setSmallIcon(R.drawable.ic_baseline_notifications_24)
+//                    .setContentTitle("Pesananmu Sedang di Proses")
+//                    .setContentText("Pesananmu sedang dibuat dengan bumbu penuh cinta")
+//                    .setContentIntent(mainPendingIntent)
+//                    .addAction(R.drawable.ic_baseline_arrow_forward_ios_24, "Buka", mainPendingIntent)
+//                    .build();
+//
+//        notificationManager.notify(123, mynotification);
+//    }
 
 }
