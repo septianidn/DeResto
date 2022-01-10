@@ -78,9 +78,10 @@ public class Login extends AppCompatActivity {
                      editor.putString("Nama", nama);
                      editor.putString("Email", email);
                      editor.putString("NoHp", no_hp);
+                     editor.putString("Username", username);
                      editor.apply();
 
-                     Toast.makeText(getApplicationContext(), "Selamat Datang "+username, Toast.LENGTH_SHORT).show();
+                     Toast.makeText(getApplicationContext(), "Selamat Datang "+nama, Toast.LENGTH_SHORT).show();
 
                      Intent intent = new Intent(getApplicationContext(), Home.class);
                      startActivity(intent);

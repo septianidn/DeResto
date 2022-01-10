@@ -6,9 +6,11 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 
 import androidx.core.app.NotificationCompat;
@@ -25,10 +27,19 @@ public class Home extends Activity implements FavoritAdapter.onFavoritViewholder
 
     RecyclerView rvlistFavorit;
     FavoritAdapter favoritAdapter;
+    TextView namaPengguna;
+    private String nama, token, email, no_hp;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("com.example.deresto.PREFS", MODE_PRIVATE);
+
+        token = sharedPreferences.getString("Token", null);
+        nama = sharedPreferences.getString("Nama", null);
+        email = sharedPreferences.getString("Email", null);
+        no_hp = sharedPreferences.getString("NoHp", null);
 
         favoritAdapter = new FavoritAdapter();
         favoritAdapter.setListFavorit(getDataFavorit());
@@ -37,6 +48,9 @@ public class Home extends Activity implements FavoritAdapter.onFavoritViewholder
         rvlistFavorit.setAdapter(favoritAdapter);
         LinearLayoutManager linearManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         rvlistFavorit.setLayoutManager(linearManager);
+
+        namaPengguna = findViewById(R.id.namaPengguna);
+        namaPengguna.setText(nama);
 
 //        FirebaseMessaging.getInstance().subscribeToTopic("Promo_Notification");
     }

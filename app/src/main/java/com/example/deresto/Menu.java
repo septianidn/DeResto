@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.deresto.adapter.MakananAdapter;
 import com.example.deresto.model.AuthObject;
+import com.example.deresto.model.ListBarang;
 import com.example.deresto.model.Makanan;
 import com.example.deresto.retrofit.LoginEndPoint;
 
@@ -17,6 +18,8 @@ import java.util.ArrayList;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -49,9 +52,21 @@ public class Menu extends Activity implements MakananAdapter.onMakananViewholder
         Retrofit retrofit = retrofitBuilder
                 .client(httpClient.build())
                 .build();
-        LoginEndPoint loginClient = retrofit.create(LoginEndPoint.class);
+        LoginEndPoint getBarang = retrofit.create(LoginEndPoint.class);
 
+        Call<ListBarang> item = getBarang.getListBarang(1);
 
+        item.enqueue(new Callback<ListBarang>() {
+            @Override
+            public void onResponse(Call<ListBarang> call, Response<ListBarang> response) {
+                 ListBarang listBarang = response.body();
+            }
+
+            @Override
+            public void onFailure(Call<ListBarang> call, Throwable t) {
+
+            }
+        });
 
 //        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));
 //        list.add((new Makanan("nasi_goreng_homies", "Nasi Goreng Homies", "4.2 (120)",6900)));

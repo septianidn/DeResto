@@ -8,12 +8,13 @@
 
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/namaPengguna"
         android:layout_width="217dp"
         android:layout_height="31dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/montserrat"
         android:text="Septian Ganteng"
+        android:onClick="Menu"
         android:textColor="#e5e5e5"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,13 +29,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat"
-        android:text="Hai Septian,"
+        android:text=""
         android:textColor="#e5e5e5"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/namaPengguna" />
 
     <TextView
         android:id="@+id/textView9"
@@ -48,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/namaPengguna" />
 
     <TextView
         android:id="@+id/textView10"
@@ -63,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/namaPengguna"
         app:layout_constraintVertical_bias="0.009" />
 
     <TextView
@@ -84,7 +85,7 @@
         android:id="@+id/textView8"
         android:layout_width="318dp"
         android:layout_height="30dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="140dp"
         android:alpha="0.7"
         android:background="@drawable/rectangle"
         android:fontFamily="@font/montserrat"
@@ -93,12 +94,12 @@
         android:text="        Masukkan kata kunci"
         android:textColor="#333333"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/rectangle_1"
+        android:id="@+id/kategori1"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_alignParentLeft="true"
@@ -114,7 +115,7 @@
         app:layout_constraintVertical_bias="0.391" />
 
     <ImageView
-        android:id="@+id/rectangle_"
+        android:id="@+id/kategori2"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_alignParentLeft="true"
@@ -150,10 +151,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ic_drinking"
         android:elevation="5pt"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_"
+        app:layout_constraintBottom_toBottomOf="@+id/kategori2"
+        app:layout_constraintEnd_toEndOf="@+id/kategori2"
+        app:layout_constraintStart_toStartOf="@+id/kategori2"
+        app:layout_constraintTop_toTopOf="@+id/kategori2"
         app:layout_constraintVertical_bias="0.25" />
 
     <ImageView
@@ -175,10 +176,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ic_plate"
         android:elevation="5pt"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+        app:layout_constraintBottom_toBottomOf="@+id/kategori1"
+        app:layout_constraintEnd_toEndOf="@+id/kategori1"
+        app:layout_constraintStart_toStartOf="@+id/kategori1"
+        app:layout_constraintTop_toTopOf="@+id/kategori1"
         app:layout_constraintVertical_bias="0.25" />
 
     <ImageView
@@ -187,14 +188,14 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ic_pudding"
         android:elevation="5pt"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_2"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="@+id/kategori3"
+        app:layout_constraintEnd_toEndOf="@+id/kategori3"
+        app:layout_constraintStart_toStartOf="@+id/kategori3"
+        app:layout_constraintTop_toTopOf="@+id/kategori3"
         app:layout_constraintVertical_bias="0.25" />
 
     <ImageView
-        android:id="@+id/rectangle_2"
+        android:id="@+id/kategori3"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_alignParentLeft="true"
@@ -271,9 +272,9 @@
         android:elevation="5pt"
         android:fontFamily="@font/montserrat"
         android:text="Makanan"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintBottom_toBottomOf="@+id/kategori1"
+        app:layout_constraintEnd_toEndOf="@+id/kategori1"
+        app:layout_constraintStart_toStartOf="@+id/kategori1"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <TextView
@@ -283,9 +284,9 @@
         android:elevation="5pt"
         android:fontFamily="@font/montserrat"
         android:text="Minuman"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_"
+        app:layout_constraintBottom_toBottomOf="@+id/kategori2"
+        app:layout_constraintEnd_toEndOf="@+id/kategori2"
+        app:layout_constraintStart_toStartOf="@+id/kategori2"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
@@ -295,9 +296,9 @@
         android:elevation="5pt"
         android:fontFamily="@font/montserrat"
         android:text="Desert"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="@+id/kategori3"
+        app:layout_constraintEnd_toEndOf="@+id/kategori3"
+        app:layout_constraintStart_toStartOf="@+id/kategori3"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView

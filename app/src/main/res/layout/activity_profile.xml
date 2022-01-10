@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/rectangle"
-        android:layout_width="262dp"
-        android:layout_height="500dp"
+        android:layout_width="265dp"
+        android:layout_height="426dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/rectangle"
@@ -21,12 +21,13 @@
         app:layout_constraintVertical_bias="0.623" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/profilEmail"
         android:layout_width="201dp"
         android:layout_height="31dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="84dp"
         android:backgroundTint="#FBBBBb"
         android:ems="10"
+        android:enabled="false"
         android:fontFamily="@font/montserrat"
         android:hint="septianganteng@gmail.com"
         android:textAlignment="textEnd"
@@ -37,7 +38,7 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle" />
 
     <EditText
-        android:id="@+id/editTextPhone2"
+        android:id="@+id/profilUsername"
         android:layout_width="201dp"
         android:layout_height="31dp"
         android:layout_marginTop="32dp"
@@ -45,15 +46,16 @@
         android:ems="10"
         android:fontFamily="@font/montserrat"
         android:hint="septianganteng"
+        android:enabled="false"
         android:textAlignment="textEnd"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/profilEmail" />
 
     <EditText
-        android:id="@+id/editTextPhone6"
+        android:id="@+id/profilNama"
         android:layout_width="201dp"
         android:layout_height="31dp"
         android:layout_marginTop="32dp"
@@ -62,14 +64,15 @@
         android:fontFamily="@font/montserrat"
         android:hint="Septian Ganteng"
         android:textAlignment="textEnd"
+        android:enabled="false"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
+        app:layout_constraintTop_toBottomOf="@+id/profilUsername" />
 
     <EditText
-        android:id="@+id/editTextPhone7"
+        android:id="@+id/profilHP"
         android:layout_width="201dp"
         android:layout_height="31dp"
         android:layout_marginTop="32dp"
@@ -77,44 +80,13 @@
         android:ems="10"
         android:fontFamily="@font/montserrat"
         android:hint="0831-6969-6969"
+        android:enabled="false"
         android:textAlignment="textEnd"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone6" />
-
-    <EditText
-        android:id="@+id/editTextPhone8"
-        android:layout_width="201dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#FBBBBB"
-        android:ems="10"
-        android:fontFamily="@font/montserrat"
-        android:hint="Gang Doli No.69"
-        android:textAlignment="textEnd"
-        android:textSize="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone7" />
-
-    <EditText
-        android:id="@+id/editTextPhone9"
-        android:layout_width="201dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#FBBBBB"
-        android:ems="10"
-        android:fontFamily="@font/montserrat"
-        android:hint="Laki-laki"
-        android:textAlignment="textEnd"
-        android:textSize="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone8" />
+        app:layout_constraintTop_toBottomOf="@+id/profilNama" />
 
     <Button
         android:id="@+id/button"
@@ -288,7 +260,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintBottom_toTopOf="@+id/profilEmail"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
@@ -301,11 +273,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Username"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone2"
+        app:layout_constraintBottom_toTopOf="@+id/profilUsername"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/profilEmail"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -314,11 +286,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Nama Pengguna"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone6"
+        app:layout_constraintBottom_toTopOf="@+id/profilNama"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2"
+        app:layout_constraintTop_toBottomOf="@+id/profilUsername"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -327,41 +299,15 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Nomor Ponsel"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone7"
+        app:layout_constraintBottom_toTopOf="@+id/profilHP"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
         app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone6"
+        app:layout_constraintTop_toBottomOf="@+id/profilNama"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="Alamat"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone8"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.146"
-        app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone7"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="Jenis Kelamin"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone9"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle"
-        app:layout_constraintHorizontal_bias="0.189"
-        app:layout_constraintStart_toStartOf="@+id/rectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone8"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/namaGede"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
