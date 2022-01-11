@@ -84,10 +84,25 @@ public class Home extends Activity implements FavoritAdapter.onFavoritViewholder
         startActivity(intent);
     }
 
-    public void Menu(View view) {
+    public void Menu1(View view) {
 //        ImageView iv;
 //        iv = findViewById(R.)
         Intent intent = new Intent(this, Menu.class);
+        intent.putExtra("kategori", 1);
+        startActivity(intent);
+    }
+    public void Menu2(View view) {
+//        ImageView iv;
+//        iv = findViewById(R.)
+        Intent intent = new Intent(this, Menu.class);
+        intent.putExtra("kategori", 2);
+        startActivity(intent);
+    }
+    public void Menu3(View view) {
+//        ImageView iv;
+//        iv = findViewById(R.)
+        Intent intent = new Intent(this, Menu.class);
+        intent.putExtra("kategori", 3);
         startActivity(intent);
     }
 

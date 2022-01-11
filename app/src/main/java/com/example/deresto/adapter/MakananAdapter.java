@@ -10,13 +10,20 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.deresto.R;
+import com.example.deresto.model.Barang;
 import com.example.deresto.model.Makanan;
 
 import java.util.ArrayList;
 
 public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.MakananViewHolder> {
 
-    public class MakananViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    ArrayList<Makanan> listMakanan = new ArrayList<>();
+
+    public MakananAdapter(ArrayList<Makanan> listMakanan) {
+        this.listMakanan = listMakanan;
+    }
+
+    public class MakananViewHolder extends RecyclerView.ViewHolder{
 
         TextView textmenumakanan, textratingmakanan, texthargamakanan;
         ImageView imageimgmakanan, imagestar, imageplus;
@@ -29,22 +36,8 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.MakananV
             imageimgmakanan = itemView.findViewById(R.id.imgmakanan);
             imagestar = itemView.findViewById(R.id.star);
             imageplus = itemView.findViewById(R.id.plus);
-            itemView.setOnClickListener(this);
+//            itemView.setOnClickListener(this);
         }
-
-        @Override
-        public void onClick(View view) {
-
-        }
-    }
-
-    public interface onMakananViewholderClick {
-
-    }
-
-    ArrayList<Makanan> listMakanan = new ArrayList<>();
-    public void setListMakanan(ArrayList<Makanan> listMakanan) {
-        this.listMakanan = listMakanan;
     }
 
     @NonNull

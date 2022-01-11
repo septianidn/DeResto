@@ -2,13 +2,20 @@ package com.example.deresto;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.app.NotificationCompat;
 
 import com.example.deresto.model.ResponMessage;
 import com.example.deresto.retrofit.LoginEndPoint;
@@ -22,15 +29,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Profile extends Activity {
 
+    public static final String CHANNEL_ID = "com.example.deresto.CH01";
+
     private String nama, token, email, no_hp, username;
     private TextView namaGede;
+    SharedPreferences sharedPreferences;
     TextView profilNama, profilUsername, profilEmail, profilHP;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("com.example.deresto.PREFS", MODE_PRIVATE);
+         sharedPreferences = getSharedPreferences("com.example.deresto.PREFS", MODE_PRIVATE);
 
          token = sharedPreferences.getString("Token", null);
          nama = sharedPreferences.getString("Nama", null);
@@ -49,6 +59,8 @@ public class Profile extends Activity {
         profilEmail.setText(email);
         profilHP.setText(no_hp);
         namaGede.setText(nama);
+
+
 
 
 
@@ -106,6 +118,7 @@ public class Profile extends Activity {
                             public void onResponse(Call<ResponMessage> call, Response<ResponMessage> response) {
                                 if (response.code() == 200){
                                     if (response.isSuccessful()){
+                                        SendNotif();
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                         Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_SHORT).show();
                                         finish();
@@ -138,5 +151,64 @@ public class Profile extends Activity {
         startActivity(intent);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
+//        if (resultCode == Activity.RESULT_OK){
+//            Intent intent =
+//            String respon_nama = intent.getStringExtra("Nama");
+//            String respon_username = intent.getStringExtra("Username");
+//            String respon_email = intent.getStringExtra("Email");
+//            String respon_hp = intent.getStringExtra("NoHP");
+//
+//            SharedPreferences.Editor editor = sharedPreferences.edit();
+//            editor.putString("Nama", respon_nama);
+//            editor.putString("Username", respon_username);
+//            editor.putString("Email", respon_email);
+//            editor.putString("NoHP", respon_hp);
+//            editor.apply();
+//
+//            profilNama.setText(respon_nama);
+//            profilUsername.setText(respon_username);
+//            profilEmail.setText(respon_email);
+//            profilHP.setText(respon_hp);
+        //}
+    }
+
+    public void SendNotif(){
+        //Toast.makeText(this, "Ini Notifikasi", Toast.LENGTH_SHORT).show();
+
+        Intent mainIntent = new Intent(this, Login.class);
+
+        PendingIntent mainPendingIntent = PendingIntent.getActivity(
+                this,
+                12345,
+                mainIntent,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+
+        NotificationManager notificationManager = (NotificationManager)
+                getSystemService(NOTIFICATION_SERVICE);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel notificationChannel =
+                    new NotificationChannel(
+                            CHANNEL_ID,
+                            "DeResto Channel",
+                            NotificationManager.IMPORTANCE_DEFAULT);
+
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
+
+        Notification mynotification =
+                new NotificationCompat.Builder(this, CHANNEL_ID)
+                        .setSmallIcon(R.drawable.ic_baseline_notifications_24)
+                        .setContentTitle("Terima Kasih Telah Menggunakan Aplikasi DeResto")
+                        .setContentText("Anda Telah Melakukan Logout")
+                        .setContentIntent(mainPendingIntent)
+                        .addAction(R.drawable.ic_baseline_arrow_forward_ios_24, "Kembali Login", mainPendingIntent)
+                        .build();
+
+        notificationManager.notify(123, mynotification);
+    }
 }

@@ -72,10 +72,10 @@ public class EditProfile extends Activity{
 
 
     public void edit(View view) {
-        String nama = editNama.getText().toString().trim();
-        String username = editUsername.getText().toString().trim();
-        String email = editEmail.getText().toString().trim();
-        String no_hp = editHP.getText().toString().trim();
+        String namaEdit = editNama.getText().toString().trim();
+        String usernameEdit = editUsername.getText().toString().trim();
+        String emailEdit = editEmail.getText().toString().trim();
+        String no_hpEdit = editHP.getText().toString().trim();
 
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
 
@@ -88,7 +88,7 @@ public class EditProfile extends Activity{
                 .build();
         LoginEndPoint regis = retrofit.create(LoginEndPoint.class);
 
-        Call<ResponMessage> editCall = regis.editProfil(token, nama, username, email,  no_hp);
+        Call<ResponMessage> editCall = regis.editProfil(token, namaEdit, usernameEdit, emailEdit,  no_hpEdit);
 
         editCall.enqueue(new Callback<ResponMessage>() {
             @Override
@@ -98,6 +98,11 @@ public class EditProfile extends Activity{
                 if (response.code() == 200){
                     if (response.isSuccessful()){
                         Intent intent = new Intent(EditProfile.this, Profile.class);
+                        intent.putExtra("Nama", namaEdit);
+                        intent.putExtra("Username", usernameEdit);
+                        intent.putExtra("Email", emailEdit);
+                        intent.putExtra("NoHP", no_hpEdit);
+                        setResult(RESULT_OK, intent);
                         Toast.makeText(getApplicationContext(), messageResponse.getMessage(), Toast.LENGTH_SHORT).show();
                         startActivity(intent);
                         finish();

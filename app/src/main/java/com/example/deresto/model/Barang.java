@@ -93,5 +93,4 @@ public class Barang {
     public void setUpdatedAt(Object updatedAt) {
         this.updatedAt = updatedAt;
     }
-
 }

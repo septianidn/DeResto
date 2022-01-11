@@ -12,6 +12,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface LoginEndPoint {
@@ -29,11 +30,15 @@ public interface LoginEndPoint {
                                  @Field("email") String email, @Field("password") String password, @Field("no_hp") String no_hp);
 
     @FormUrlEncoded
-    @POST("editProfil")
+    @PUT("editProfil")
     Call<ResponMessage> editProfil(@Field("token") String Token, @Field("nama") String nama, @Field("username") String username,
                                  @Field("email") String email,  @Field("no_hp") String no_hp);
 
     @FormUrlEncoded
+    @PUT("editPassword")
+    Call<ResponMessage> editPassword(@Field("token") String Token, @Field("password") String password);
+
+
     @GET("api/barang/{id_kategori}")
     Call<ListBarang> getListBarang(@Path("id_kategori") Integer id_kategori);
 

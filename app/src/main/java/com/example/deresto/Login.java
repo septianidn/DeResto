@@ -1,9 +1,15 @@
 package com.example.deresto;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -21,6 +27,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Login extends AppCompatActivity {
+    public static final String CHANNEL_ID = "com.example.deresto.CH01";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +89,7 @@ public class Login extends AppCompatActivity {
                      editor.apply();
 
                      Toast.makeText(getApplicationContext(), "Selamat Datang "+nama, Toast.LENGTH_SHORT).show();
+                     SendNotif();
 
                      Intent intent = new Intent(getApplicationContext(), Home.class);
                      startActivity(intent);
@@ -110,5 +118,42 @@ public class Login extends AppCompatActivity {
 //        }
 
 
+
+    }
+
+    public void SendNotif(){
+        //Toast.makeText(this, "Ini Notifikasi", Toast.LENGTH_SHORT).show();
+
+        Intent mainIntent = new Intent(this, Home.class);
+
+        PendingIntent mainPendingIntent = PendingIntent.getActivity(
+                this,
+                12345,
+                mainIntent,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+
+        NotificationManager notificationManager = (NotificationManager)
+                getSystemService(NOTIFICATION_SERVICE);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel notificationChannel =
+                    new NotificationChannel(
+                            CHANNEL_ID,
+                            "DeResto Channel",
+                            NotificationManager.IMPORTANCE_DEFAULT);
+
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
+
+        Notification mynotification =
+                new NotificationCompat.Builder(this, CHANNEL_ID)
+                        .setSmallIcon(R.drawable.ic_baseline_notifications_24)
+                        .setContentTitle("Selamat Datang Di Aplikasi DeResto")
+                        .setContentText("Selamat Menjelajahi Menu-menu di DeResto")
+                        .setContentIntent(mainPendingIntent)
+                        .addAction(R.drawable.ic_baseline_arrow_forward_ios_24, "Buka", mainPendingIntent)
+                        .build();
+
+        notificationManager.notify(123, mynotification);
     }
 }
