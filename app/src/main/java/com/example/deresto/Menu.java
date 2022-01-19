@@ -41,6 +41,8 @@ public class Menu extends Activity{
 
         kategori = intent.getIntExtra("kategori",0);
 
+        Toast.makeText(getApplicationContext(), String.valueOf(kategori), Toast.LENGTH_SHORT).show();
+
 
         makananAdapter = new MakananAdapter(null);
 
@@ -64,7 +66,7 @@ public class Menu extends Activity{
                 .build();
         LoginEndPoint getBarang = retrofit.create(LoginEndPoint.class);
 
-        Call<ListBarang> item = getBarang.getListBarang(1);
+        Call<ListBarang> item = getBarang.getListBarang(kategori);
 
         item.enqueue(new Callback<ListBarang>() {
             @Override
